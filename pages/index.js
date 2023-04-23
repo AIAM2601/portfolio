@@ -2,6 +2,10 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from "next/head";
 import kratos from '../public/kratos_geek.png'
+import Link from 'next/link';
+import { useState } from "react"; // import state
+import Navbar from "components/Navbar"
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -19,15 +23,7 @@ export default function Home() {
 
       <main className='bg-white'>
 
-        <nav class="bg-white py-4">
-          <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center items-center">
-            <a href="#" class=" self-center text-3xl font-bold whitespace-nowrap dark:text-white md:p-0 text-gray-800 mr-8 ">Andrés Aguilar</a>
-            <a href="#AboutMe" class="block text-2xl py-2 pl-3 pr-4 my-1 mx-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">About</a>
-            <a href="#Skills" class="block text-2xl py-2 pl-3 pr-4 my-1 mx-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
-            <a href="#projects" class="block text-2xl py-2 pl-3 pr-4 my-1 mx-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
-            <a href="#contact" class="block text-2xl py-2 pl-3 pr-4 my-1 mx-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-          </div>
-        </nav>
+        <Navbar/>
 
         <div className='text-center'>
           <div className='mx-auto mt-3 w-80 h-80'>
@@ -35,9 +31,9 @@ export default function Home() {
           </div>
           
           <div id='IconsLinks' className=''>
-          <a href='mailto:andres.aguilarfl@gmail.com' target="_blank"><i class="fa-regular mr-6 fa-envelope  mt-3 fa-4x "></i></a>
-          <a href='https://www.linkedin.com/in/andres-aguilar-569319161/' target="_blank"><i class="fa-brands  mr-6 fa-linkedin  mt-3 fa-4x  "></i></a>
-          <a href='https://github.com/AIAM2601' target="_blank"><i class="fa-brands  mr-6 fa-github  mt-3 fa-4x  "></i></a>
+          <a href='mailto:andres.aguilarfl@gmail.com' target="_blank"><i class="fa-regular p-6 fa-envelope mt-3 fa-3x "></i></a>
+          <a href='https://www.linkedin.com/in/andres-aguilar-569319161/' target="_blank"><i class="fa-brands p-6 fa-linkedin  mt-3 fa-3x "></i></a>
+          <a href='https://github.com/AIAM2601' target="_blank"><i class="fa-brands  p-6 fa-github  mt-3 fa-3x  "></i></a>
           </div>
 
           <div className='mt-1' id='AboutMe'>
@@ -68,5 +64,6 @@ export default function Home() {
 
       </main>
     </div>
+
   )
 }
