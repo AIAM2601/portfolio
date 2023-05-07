@@ -5,6 +5,7 @@ import kratos from '../public/kratos_geek.png'
 import Link from 'next/link';
 import { useState } from "react"; // import state
 import Navbar from "components/Navbar"
+import Projects from "components/Projects"
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -42,22 +43,45 @@ export default function Home() {
           </div>
         </div>
 
-        <div id='Skills' className='mt-1 text-center'>
-        <div className='mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Skills</div>
-        <ul class="list-none">
-          <li>Python Django</li>
-          <li>JS HTML CSS Node.js React.js</li>
-          <li>C/C++</li> 
-          <li>C#</li> 
-          <li>PostreSQL - MySQL - MongoDB</li>
-        </ul>
+        <div className='text-center mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Skills</div>
+        <div id='Skills' className=' flex items-center justify-center mt-1  '>  
+          <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-0'>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+              <span className='font-bold'>Programming Languages</span>
+                <ul class="list-none">
+                  <li>Python Django</li>
+                  <li>JS HTML CSS Node.js React.js</li>
+                  <li>C/C++</li> 
+                  <li>C#</li> 
+                </ul>
+              </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+              <span className='font-bold'>Tools</span>
+                <ul class="list-none">
+                  <li>PostreSQL - MySQL - MongoDB</li>
+                  <li>Unity</li>
+                  <li>Blender</li> 
+                  <li>Krita - Gimp</li> 
+                  <li>Davinci Resolve</li> 
+                </ul>
+              </div>
+              <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+                <span className='font-bold'>Languages</span>
+                <ul class="list-none">
+                  <li>English</li>
+                  <li>Spanish</li>
+                  <li>Portuguese</li> 
+                </ul>
+              </div>
+            </div>
         </div>
 
-        <div id='projects' className='text-center'>
+        <div id='projects' className='text-center grid place-items-center'>
         <div className='mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Projects</div>
+        <Projects />
         </div>
 
-        <div id='contact' className='text-center'>
+        <div id='contact' className='text-center mb-12'>
         <div className='mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Contact</div>
         <span>andres.aguilarfl@gmail.com</span>
         </div>
