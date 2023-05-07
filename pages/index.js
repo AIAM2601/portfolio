@@ -43,8 +43,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='text-center mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Skills</div>
-        <div id='Skills' className=' flex items-center justify-center mt-1  '>  
+        <div id='Skills' className='text-center mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Skills</div>
+        <div  className=' flex items-center justify-center mt-1  '>  
           <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-0'>
             <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
               <span className='font-bold'>Programming Languages</span>
