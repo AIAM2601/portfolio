@@ -13,7 +13,7 @@ export default function ImgMediaCard() {
       <Grid container direction="row" justifyContent="space-evenly" alignItems="center" spacing={1} >
         <Grid item >
           <Card sx={{ width: 400, height: 300}}>
-            <CardContent>
+            <CardContent >
               <Typography gutterBottom variant="h4" component="div" >
                 <Box sx={{ fontWeight: 'bold' }}>Social Media App</Box>
               </Typography>

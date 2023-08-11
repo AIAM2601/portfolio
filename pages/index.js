@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
       </Head>
 
-      <main className='bg-white'>
+      <main className='bg-white dark:bg-slate-800'>
 
         <Navbar/>
 
@@ -37,35 +37,35 @@ export default function Home() {
           <a href='https://github.com/AIAM2601' target="_blank"><i class="fa-brands  p-6 fa-github  mt-3 fa-3x  "></i></a>
           </div>
 
-          <div className='mt-1' id='AboutMe'>
-            <div className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>About</div>
-            <div className='mt-1'>Welcome to my portfolio! I'm Andrés Aguilar, a Software Engineer! <br></br> I have a passion for learning new things and solving problems!</div>
+          <div className='mt-3' id='AboutMe'>
+            <div className='mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white'>About</div>
+            <div className='dark:text-white mt-1'>Welcome to my portfolio! I'm Andrés Aguilar, a Software Engineer! <br></br> I have a passion for learning new things and solving problems!</div>
           </div>
         </div>
 
-        <div id='Skills' className='text-center mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Skills</div>
+        <div id='Skills' className='text-center mb-4 mt-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white'>Skills</div>
         <div  className=' flex items-center justify-center mt-1  '>  
           <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-0'>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+            <div class="dark:text-white max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
               <span className='font-bold'>Programming Languages</span>
                 <ul class="list-none">
                   <li>Python Django</li>
-                  <li>JS HTML CSS Node.js React.js</li>
-                  <li>C/C++</li> 
-                  <li>C#</li> 
+                  <li>Javascript Node.js</li>
+                  <li>Java</li> 
+                  <li>HTML CSS React.js</li>
                 </ul>
               </div>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+            <div class="dark:text-white max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
               <span className='font-bold'>Tools</span>
                 <ul class="list-none">
                   <li>PostreSQL - MySQL - MongoDB</li>
+                  <li>Wordpress</li>
+                  <li>Photoshop</li> 
+                  <li>Figma</li> 
                   <li>Unity</li>
-                  <li>Blender</li> 
-                  <li>Krita - Gimp</li> 
-                  <li>Davinci Resolve</li> 
                 </ul>
               </div>
-              <div class="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
+              <div class="dark:text-white max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
                 <span className='font-bold'>Languages</span>
                 <ul class="list-none">
                   <li>English</li>
@@ -77,15 +77,15 @@ export default function Home() {
         </div>
 
         <div id='projects' className='text-center grid place-items-center'>
-        <div className='mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Projects</div>
+        <div className='mb-6 mt-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white'>Personal Projects</div>
         <Projects />
         </div>
 
-        <div id='contact' className='text-center mb-12'>
-        <div className='mb-4 mt-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-6xl dark:text-white'>Contact</div>
-        <span>andres.aguilarfl@gmail.com</span>
+        <div id='contact' className='text-center py-1 pb-10'>
+        <div className='mb-4 mt-2 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white'>Contact</div>
+        <p className='dark:text-white text-[18px] mb-1'>For more information on other projects I've worked on please contact me</p>
+        <span className='dark:text-white text-[18px] mb-12'>andres.aguilarfl@gmail.com</span>
         </div>
-
       </main>
     </div>
 
