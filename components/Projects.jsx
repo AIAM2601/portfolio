@@ -13,7 +13,7 @@ export default function ImgMediaCard() {
     <Box>
       <Grid container direction="row" justifyContent="space-evenly" alignItems="center" spacing={1} >
         <Grid   item >
-          <Card className='dark:bg-[#0c4a6e] dark:[color:white] '  sx={{ width: 400, height: 300}}>
+          <Card className='dark:bg-[#0c4a6e] dark:[color:white] '  sx={{ width: 350, height: 300}}>
             <CardContent >
               <Typography gutterBottom variant="h4" component="div" >
                 <Box className="min-[300px]:text-[24px]" sx={{ fontWeight: 'bold' }}>Social Media App</Box>
@@ -34,13 +34,13 @@ export default function ImgMediaCard() {
           </Card>
         </Grid>
         <Grid item >
-          <Card className='dark:bg-[#0c4a6e] dark:[color:white]' sx={{ width: 400, height: 300}}>
+          <Card className='dark:bg-[#0c4a6e] dark:[color:white]' sx={{ width: 350, height: 300}}>
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
               <Box className="min-[300px]:text-[24px]"  sx={{ fontWeight: 'bold' }}> La Princesa De Prusia</Box>
               </Typography>
               <iframe 
-                  width="360" 
+                  width="330" 
                   height="200" 
                   src="https://www.youtube.com/embed/biiiKkNwj_M" 
                   title="YouTube video player" 
