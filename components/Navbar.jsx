@@ -12,24 +12,24 @@ const Navbar = () => {
     console.log("clicked");
   };
   return (
-    <nav class="dark:bg-[#0c4a6e]">
-      <div class="flex flex-wrap items-center justify-evenly justify-items-center mx-auto p-4">
+    <nav className="dark:bg-[#0c4a6e]">
+      <div className="flex flex-wrap items-center justify-evenly justify-items-center mx-auto p-4">
         <a
           href="https://aiam2601.github.io/portfolio/"
           className=" flex items-center font-bold  dark:text-white text-gray-800"
         >
           <Image
             src={kratos}
-            class="rounded-full w-10 h-10 mr-2"
+            className="rounded-full w-10 h-10 mr-2"
             alt="kratos Logo"
           ></Image>
-          <span class="self-center font-bold whitespace-nowrap dark:text-white sm:text-[28px] md:text-[32px] lg:text-[32px] min-[320px]:text-[28px] ">
+          <span className="self-center font-bold whitespace-nowrap dark:text-white sm:text-[28px] md:text-[32px] lg:text-[32px] min-[320px]:text-[28px] ">
             Andrés Aguilar
           </span>
         </a>
 
-        <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0">
+        <div className="hidden w-full md:block md:w-auto " id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <Link href="#AboutMe">
               <li className="block text-2xl py-2 pl-3 pr-4 my-1 mt-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:[color:#126ca1] dark:hover:[color:#02141f] md:p-0 dark:text-white">
                 About
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
 
         <div onClick={handleNav} className="md:hidden cursor-pointer">
-          <AiOutlineMenu class="dark:[color:white]" size={26} />
+          <AiOutlineMenu className="dark:[color:white]" size={26} />
         </div>
         <div
           className={
@@ -66,11 +66,11 @@ const Navbar = () => {
         >
           <div className="flex w-full items-center justify-end">
             <div onClick={handleNav} className="cursor-pointer">
-              <AiOutlineClose class="dark:[color:white]" size={26} />
+              <AiOutlineClose className="dark:[color:white]" size={26} />
             </div>
           </div>
-          <div class="flex-col py-4">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 ">
+          <div className="flex-col py-4">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 ">
               <Link href="#AboutMe">
                 <li
                   onClick={() => setIsNavOpen(false)}

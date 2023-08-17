@@ -44,9 +44,9 @@ export default function ImgMediaCard() {
                   height="200" 
                   src="https://www.youtube.com/embed/biiiKkNwj_M" 
                   title="YouTube video player" 
-                  frameborder="0" 
+                  frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>    
+                  allowFullScreen>    
               </iframe>
               <Typography className="dark:[color:white]" variant="body2" color="text.secondary">
                 Video Game built with Unity (C#)
