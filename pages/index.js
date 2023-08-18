@@ -1,21 +1,16 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import kratos from "../public/kratos_geek.png";
-import Link from "next/link";
 import { useState } from "react"; // import state
 import Navbar from "components/Navbar";
-import Projects from "components/Projects";
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import ProjectsR from "@/components/ProjectsR";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
-      <main className="bg-white dark:bg-[#0c4a6e]">
+    <div className="bg-white dark:bg-[#0c4a6e]">
+      <main>
         <Navbar />
 
         <div className="text-center">
@@ -27,7 +22,7 @@ export default function Home() {
             <div className="mb-4 font-bold leading-none tracking-tight text-gray-900  min-[320px]:text-[28px] lg:text-[32px] dark:text-white">
               About
             </div>
-            <div className="dark:text-white mt-1 text-[20px]">
+            <div className="dark:text-white mt-1 text-[20px] pr-1 pl-1">
               Welcome to my portfolio! I'm Andrés Aguilar, a Software Engineer!{" "}
               <br></br> I'm a <strong>full stack web developer</strong>, I have a passion for
               learning <br></br> new things and solving problems!
@@ -77,10 +72,10 @@ export default function Home() {
           <div className="mb-6 mt-4  font-bold leading-none tracking-tight text-gray-900 min-[320px]:text-[28px] lg:text-[32px] dark:text-white">
             Personal Projects
           </div>
-          <Projects />
+          <ProjectsR />
         </div>
 
-        <div id="contact" className="text-center py-1 pb-10">
+        <div id="contact" className="text-center py-1 pb-10 pr-2 pl-2">
           <div className="mb-4 mt-2 font-bold leading-none tracking-tight text-gray-900 min-[320px]:text-[28px] lg:text-[32px] dark:text-white">
             Contact
           </div>
